@@ -218,16 +218,6 @@ current_focus:
 
 <br>
 
-<!-- Activity Graph -->
-<div align="center">
-  <h2>
-    <img src="https://media.giphy.com/media/W5eoZHPpUx9sapR0eu/giphy.gif" width="30">
-    <b>ACTIVITY HEATMAP</b>
-    <img src="https://media.giphy.com/media/W5eoZHPpUx9sapR0eu/giphy.gif" width="30">
-  </h2>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=z3ro0b&bg_color=0d1117&color=00FF00&line=00FF00&point=FFFFFF&hide_border=true&area=true&area_color=00FF00" alt="z3ro0b activity graph"/>
-</div>
-
 <br>
 
 <!-- Write-ups Section -->
