@@ -1,7 +1,7 @@
 
 <!-- Animated Header -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=venom&height=200&color=gradient&customColorList=12,14,16,17,11&text=Z3RO0B&fontSize=70&fontColor=00FF00&animation=twinkling&fontAlignY=40&desc=Elite%20Bug%20Hunter%20%7C%20Web%20Pentester%20%7C%20Red%20Team%20Apprentice&descSize=18&descAlignY=65" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=venom&height=200&color=gradient&customColorList=12,14,16,17,11&text=Z3ROB&fontSize=70&fontColor=00FF00&animation=twinkling&fontAlignY=40&desc=Elite%20Bug%20Hunter%20%7C%20Web%20Pentester%20%7C%20Red%20Team%20Apprentice&descSize=18&descAlignY=65" width="100%" />
 </div>
 
 <!-- Typing Animation -->
