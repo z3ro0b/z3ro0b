@@ -1,41 +1,48 @@
-# z3rob
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.png">
+  <img alt="z3rob — Abdelrahman Zourob. Authorization research on identity platforms." src="assets/banner-dark.png" width="100%">
+</picture>
 
-Authorization research on identity platforms. Most of the work is Okta.
+<br>
 
-I test how access is actually enforced: object access, function access, admin roles, and tenant boundaries. The bugs worth reporting are the ones the UI never offers and the token still allows.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/strip-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="assets/strip-light.png">
+  <img alt="Now: Okta PAM and access governance. Class: authorization logic. Posture: coordinated disclosure. Credentials: eJPT and eWPT." src="assets/strip-dark.png" width="100%">
+</picture>
 
-In-scope assets only. Reports go to the program that owns the asset, with the smallest proof that shows impact. No customer tenants, no social engineering, no availability testing.
+<br>
 
-## Now
+Okta Privileged Access and Access Governance. Role scope, access requests, entitlement grants, and isolation between sandboxes.
 
-Okta Privileged Access and Access Governance. Role scope, access requests and entitlement grants, and isolation between sandboxes.
+### Research
 
-## Scope of research
-
-| Area | What I am looking for |
+| Class | The failure |
 | --- | --- |
-| BOLA / IDOR | Cross-object access on users, groups, apps, entitlements, and requests |
-| BFLA | API actions a role can call that policy says it cannot |
-| Broken access control | UI checks that the API does not repeat |
-| Tenant isolation | Data or admin actions that cross an org or sandbox boundary |
-| Workflow trust | Approvals and grants that skip a control the product implies is mandatory |
+| BOLA / IDOR | An object identifier is doing the authorization |
+| BFLA | A role can call a function the policy does not grant |
+| Broken access control | The console hides an action the API still performs |
+| Tenant isolation | State or admin control crosses an org or sandbox boundary |
+| Workflow trust | An approval or a grant is assumed, and never checked |
 
-## Disclosure
+### Rules
 
-Nothing is listed until the vendor has fixed it and the program allows publication. There is no public ledger yet. Cleared write-ups will be added here, not before.
+In-scope assets only. The proof is the smallest request that shows impact. A finding is published after it is fixed and the program allows it.
 
-## Method
+No customer tenants. No social engineering. No availability testing.
 
-Manual first. Burp Suite for request tampering. Obsidian for research notes. Kali Linux on WSL2 as the lab.
+### Practice
 
-`bugcrowd-mcp` is a read-only client for program scope and submission state. It does not generate exploit traffic.
+| | |
+| --- | --- |
+| Burp Suite | Request tampering and replay |
+| Kali Linux, WSL2 | Lab |
+| Obsidian | Research notes |
+| `bugcrowd-mcp` | Read-only scope and submission state. It does not send exploit traffic |
 
-## Certifications
+### Credentials
 
-eJPT and eWPT. INE Security.
+eJPT · eWPT — INE Security
 
-## Contact
-
-No public contact on this page yet. Do not put vulnerability details in a GitHub issue.
-
-PGP, a Bugcrowd profile, and write-ups will be linked here once they exist.
+<sub>Write-ups, a disclosure ledger, and a PGP key are added here only after a program clears them. Do not send vulnerability details in a GitHub issue.</sub>
